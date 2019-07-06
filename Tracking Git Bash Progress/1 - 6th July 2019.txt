@@ -1,0 +1,155 @@
+bash: virtualenvwrapper.sh: No such file or directory
+
+Shashwat@DESKTOP-H5PIUV5 MINGW64 ~
+$ cd /d/python-project
+
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project
+$ mkdir myproject && cd myproject
+
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/myproject
+$ pyvenv venv
+bash: pyvenv: command not found
+
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/myproject
+$ bash: pyvenv: command not found
+bash: bash:: command not found
+
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/myproject
+$ py -m venv env
+bash: py: command not found
+
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/myproject
+$ alias python='winpty python.exe'
+
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/myproject
+$ py -m venv env
+bash: py: command not found
+
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/myproject
+$ git init
+Initialized empty Git repository in D:/python-project/myproject/.git/
+
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/myproject (master)
+$ echo 'venv' > .gitignore
+
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/myproject (master)
+$ activate venv/bin/activate
+bash: activate: command not found
+
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/myproject (master)
+$ python -i
+Python 3.7.3 (v3.7.3:ef4ec6ed12, Mar 25 2019, 22:22:05) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> activate venv/bin/activate
+  File "<stdin>", line 1
+    activate venv/bin/activate
+                ^
+SyntaxError: invalid syntax
+>>> 3+5
+8
+>>> exit
+Use exit() or Ctrl-Z plus Return to exit
+>>> exit()
+
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/myproject (master)
+$ activate venv/bin/activate
+bash: activate: command not found
+
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/myproject (master)
+$ source Scripts/activate
+bash: Scripts/activate: No such file or directory
+
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/myproject (master)
+$ cd /d/python-project/myproject/venv
+
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/myproject/venv (master)
+$ source Scripts/activate
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/myproject/venv (master)
+$ cd /d/python-project/myproject
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/myproject (master)
+$ pip freeze > requirements.txt
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/myproject (master)
+$ python -m tkinter
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/myproject (master)
+$ ls
+basicGUI.py  requirements.txt  venv/
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/myproject (master)
+$ git add --all
+warning: LF will be replaced by CRLF in .gitignore.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in .idea/workspace.xml.
+The file will have its original line endings in your working directory
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/myproject (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   .gitignore
+        new file:   .idea/encodings.xml
+        new file:   .idea/misc.xml
+        new file:   .idea/modules.xml
+        new file:   .idea/myproject.iml
+        new file:   .idea/vcs.xml
+        new file:   .idea/workspace.xml
+        new file:   basicGUI.py
+        new file:   requirements.txt
+
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/myproject (master)
+$ git commit -m "Basic GUI window created."
+[master (root-commit) 1359e16] Basic GUI window created.
+ 9 files changed, 239 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 .idea/encodings.xml
+ create mode 100644 .idea/misc.xml
+ create mode 100644 .idea/modules.xml
+ create mode 100644 .idea/myproject.iml
+ create mode 100644 .idea/vcs.xml
+ create mode 100644 .idea/workspace.xml
+ create mode 100644 basicGUI.py
+ create mode 100644 requirements.txt
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/myproject (master)
+$ git log
+commit 1359e16b7d2a2611a56b772c8da25ecc630558a3 (HEAD -> master)
+Author: Shashwat Agrawal <shashwat1999@gmail.com>
+Date:   Sat Jul 6 21:13:50 2019 +0530
+
+    Basic GUI window created.
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/myproject (master)
+$ git remote add origin https://github.com/cluelessno1/learning-on-my-own.git
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/myproject (master)
+$ git remote -v
+origin  https://github.com/cluelessno1/learning-on-my-own.git (fetch)
+origin  https://github.com/cluelessno1/learning-on-my-own.git (push)
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/myproject (master)
+$ push origin master
+bash: push: command not found
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/myproject (master)
+$ git push origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (12/12), 3.71 KiB | 151.00 KiB/s, done.
+Total 12 (delta 0), reused 0 (delta 0)
+To https://github.com/cluelessno1/learning-on-my-own.git
+ * [new branch]      master -> master
+(venv)
+Shashwat@DESKTOP-H5PIUV5 MINGW64 /d/python-project/myproject (master)
+$
