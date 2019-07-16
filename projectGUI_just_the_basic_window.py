@@ -5,7 +5,7 @@ root = Tk()
 v = StringVar()                    #should declare v as StringVar() so that we can change it's value
 
 def printField(event):
-   #entry_1.delete(0, END)   -> can be used to delte the previously displaying value in the entry field
+   #entry_1.delete(0, END)   -> can be used to delete the previously displaying value in the entry field
    s = entry_1.get()               #get() is used to retrieve the text entered in the entry field
    print(s)
    v.set(s)                        #set() is used to set the value of the variable v so that it is updated in the label
